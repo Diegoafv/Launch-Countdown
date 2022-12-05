@@ -11,7 +11,8 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="style.css" />
-    <script src="script.js"></script>
+    <script src="script-countdown.js"></script>
+
     <title>Document</title>
   </head>
   <body>
@@ -41,7 +42,25 @@
             </div>
           </div>
           <p class="subscribe-text">Subscribe and learn more</p>
-          <button class="subscribe-button">Subscribe</button>
+
+          <section class="modal hidden">
+            <div class="flex">
+              <h3>Stay in touch</h3>
+              <button class="btn-close">⨉</button>
+            </div>
+            <div>
+              <p>
+                Subscribe to the newsletter to receive future updates and get
+                notified when we launch.
+              </p>
+            </div>
+            <input type="email" id="email" placeholder="youremail@email.com" />
+            <button class="btn">Submit</button>
+          </section>
+
+          <div class="overlay hidden"></div>
+
+          <button class="subscribe-button btn-open">Subscribe</button>
         </div>
         <div class="right">
           <img id="rocket" src="/assets/images/rocket.svg" alt="image" />
@@ -49,4 +68,5 @@
       </div>
     </main>
   </body>
+  <script src="script-modal.js"></script>
 </html>
